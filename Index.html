@@ -1,0 +1,1807 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+    <style> @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap'); 
+  </style>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/aoscss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pizzan & Burger</title>
+</head>
+<body>
+  
+    <!--NAVBAR-->
+    <div class="navbar navbar-expand-md navbar-dark bc fixed-top" >
+        <div class="container-fluid ">
+          <a href="index.html"><img src="images/logo.png" alt="PIZZA-BURGER LOGO" class="img-fluid w-logo"></a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-center " id="mainmenu">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link active">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#product-pizza" class="nav-link  ">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#delivery" class="nav-link menu">DELIVERY</a>
+              </li>
+              <li class="nav-item">
+                <a href="sign.html" class="nav-link menu">SIGN IN</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#reservation" class="nav-link menu">RESERVATION</a>
+              </li>
+          </ul>
+          </div>
+        </div>
+    </div>
+    <!--HERO-->
+    <img  class=" position-relative  img-fluid image " src="images/hero.jpg" alt="Burger&Pizza Hero">
+    <div class=" container-fluid text-light  position-absolute top-50 start-0 ">
+        <h2 class="mb-2 w-50">TRADITIONAL SYRIAN CUISINE</h2>
+        <h1 class="mb-4">FAST FOOD</h1>
+        <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Ask For Food
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-dark" id="staticBackdropLabel">Ask For Food</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                      <form action="index.php" method="post">
+                        <!--First Name-->
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" >First Name</span>
+                          <input type="text" name="firstName" class="form-control " >
+                        </div>
+                        <!--Last Name-->
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" >Last Name</span>
+                          <input type="text" name="lastName" class="form-control" >
+                        </div>
+                        <!--Email-->
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">Email</span>
+                          <input type="text" class="form-control" id="basic-url" name="email" >
+                        </div>
+                          <!--Food Name-->
+                          <div class="input-group mb-3">
+                            <span class="input-group-text">Food Name</span>
+                            <input type="Text" name="foodName" class="form-control" >
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text text-muted ">Food Description</span>
+                            <textarea class="form-control" name="foodDescription"  ></textarea>
+                            </div>
+                        <input type="submit" name="submit" class="btn btn-outline-danger" value="Confirm Order">
+                      </form>
+                </div>
+              </div>
+              <div class="modal-footer ms-auto">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr class="w-50">
+    </div>
+    
+    <!--TABS & CONTENT-->
+    <section class="my-4"data-aos="fade-down">
+        <!--TABS-->
+          <div class="tabs container-fluid text-center w-50">
+            <ul class="d-md-flex justify-content-between tab-select  ">
+                <li data-attr="tab_1" class=" active_1 list-group-item  rounded hov  fs-4 mb-1 ms-1" ><span><img class="img-fluid w-25 " src="images/pizza icon.png" alt="pizza-icon"></span> PIZZA</li>
+                <li data-attr="tab_2" class=" list-group-item rounded hov  fs-4 mb-1 ms-1 "><span><img class="img-fluid w-25 " src="images/burger icon.png" alt="burger-icon"></span>BURGER</li>
+            </ul>
+        </div>
+        <!--CONTENT-->
+        <div class="content container-fluid">
+          <!--Tab pizza-->
+          <div class="tab_content tab_1 ">
+              <div class="row row-cols-lg-4 row-cols-md-2  g-2">
+                 <div class="col-lg-6 col-md-12 my-auto">
+                    <div class="card text-center text-lg-start rounded py-2 px-2 bg-light" >
+                      <h1 class="text-center text-prim">DOMINOS PIZZA</h1>
+                      <p class="lh-lg"><span class="text-muted">Burger Pizza!</span> Yes, you heard that right. The curiosity and intrigue must be bubbling up as you hear about a combination of the two tastiest delicacies preferred by today is generation offered by the one and only Dominos</p>
+                      <button class="btn btn-outline-secondary w-50 mx-auto hov " onclick="playpause()">Play/Pause</button>
+                    </div>
+                 </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100">
+                      <video class="w-100 rounded" id="video1">
+                        <source src="./images/Advertising.mp4">
+                    </video>
+                  </div>
+                  </div>
+                </div>
+          </div>
+          <!--Tab burger-->
+          <div class="tab_content tab_2 ">
+            <div class="row row-cols-lg-4 row-cols-md-2  g-2">
+              <div class="col-lg-6 col-md-12 my-auto">
+                 <div class="card text-center text-lg-start rounded py-2 px-2 bg-light">
+                   <h1 class="text-center text-prim">DOMINOS BURGER</h1>
+                   <p class="lh-lg">The hamburger is an American food that is often considered a fast food and has quickly spread all over the world until it has become one of the meals of globalization,onsisting of a sandwich of meat or chicken in addition to ketchup</p>
+                    <button class="btn btn-outline-secondary w-50 mx-auto hov " onclick="playpausee()">Play/Pause</button>
+
+                 </div>
+              </div>
+               <div class="col-lg-6 col-md-12">
+                 <div class="card h-100">
+                   <video class="w-100 rounded" id="videoo1">
+                                <source src="./images/burger advertise.mp4">
+                  </video>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+    </section>
+    <!--PRODUCTS-->
+    <div class="container-fluid text-center my-3" id="products">
+      <h1 class="text-center text-danger">Products</h1>
+         <!--PIZZA-->
+         <div class="w-50 text-center mx-auto my-3" id="product-pizza">
+              <h1 class="text-prim">PIZZA MENU</h1>
+              <p>A flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese, often garnished with anchovies, sausage slices, mushrooms, etc. </p>
+              <div class="bg-danger fs-3 text-light">
+                  <p>Get <span class="text-warning">50%</span> Off When You Spend <span class="text-warning">+100$</span></p>            
+              </div>
+            </div>
+        <div class="row mb-2" >
+            <div class="col-lg-6 col-sm-12 mb-2 ">
+                <div class="position-relative ">
+                    <img class="siz-img" src="./images/pizzamenu1.jpg" alt="pizza">
+                    <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                    <h2>Original</h2>
+                        <h5 class="tex-light text-center">BIG 18.00$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 12.00$</h5>
+                        <h5 class="tex-light text-center">SMALL 8.00$</h5>
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#pizza">
+                        BUY NOW
+                    </button>
+                    </div>
+                </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="pizza" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <!--But Order-->
+                                    <form action="index.php#product-pizza" method="post">
+                                       <!--First Name-->
+                                          <div class="input-group mb-3">
+                                                  <span class="input-group-text">First Name</span>
+                                                  <input type="text"name="firstName"class="form-control"  required>
+                                            </div>
+                                            <!--Last Name-->
+                                            <div class="input-group mb-3">
+                                            <span class="input-group-text">Last Name</span>
+                                            <input type="text" name="lastName" class="form-control" required>
+                                            </div>
+                                            <!--Email-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Email</span>
+                                              <input type="text" class="form-control" id="email" name="email" required>
+                                            </div>
+                                            <!--Food Type-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Meal Name</span>
+                                              <input type="text" class="form-control" id="foodType" name="foodType"required >
+                                            </div>
+                                            <!--Food Count-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Meals Count</span>
+                                              <input type="text" class="form-control" id="mealsCount" name="mealsCount"required >
+                                            </div>
+                                              <!--SIZE-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text w-25 me-2">Size</span>
+                                                    <input type="checkbox" class="btn-check" id="btn1" autocomplete="off" name="big">
+                                                  <label class="btn btn-outline-danger" for="btn1">BIG</label>
+                                                    <div class="mx-2"></div>
+                                                    <input type="checkbox" class="btn-check" id="btn2" autocomplete="off" name="medium">
+                                                  <label class="btn btn-outline-danger" for="btn2">MEDIUM</label>
+                                                    <div class="mx-2"></div>
+                                                    <input type="checkbox" class="btn-check" id="btn3" autocomplete="off" name="small">
+                                                  <label class="btn btn-outline-danger" for="btn3">SMALL</label>
+                                              </div>
+                                              
+                                            <!--credit card-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">Name  Card</span>
+                                                <input type="text"  name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                              </div>
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Number  Card</span>
+                                                <input type="text" name="numberCard" class="form-control w-25"required>
+                                                <div class="my-3"></div>
+                                              </div>
+                                              <div class="input-group">
+                                                <span class="input-group-text">Code Number On Card</span>
+                                                <input type="text" name="codeNumber"class="form-control" required>
+                                              </div>
+                                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit1">
+                                    </form>
+                                </div>
+                              </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mb-2 ">
+              <div class="position-relative ">
+                  <img class="siz-img" src="./images/pizzamenu2.jpg" alt="pizza">
+                  <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                  <h2>SALAMI</h2>
+                      <h5 class="tex-light text-center">BIG 20.00$</h5>
+                      <h5 class="tex-light text-center">MEDIUM 14.00$</h5>
+                      <h5 class="tex-light text-center">SMALL 10.00$</h5>
+                      <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#pizza2">
+                      BUY NOW
+                  </button>
+                  </div>
+              </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="pizza2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="container">
+                                  <!--But Order-->
+                                  <form action="index.php#product-pizza" method="post">
+                                     <!--First Name-->
+                                        <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text"name="firstName"class="form-control"  required>
+                                          </div>
+                                          <!--Last Name-->
+                                          <div class="input-group mb-3">
+                                          <span class="input-group-text">Last Name</span>
+                                          <input type="text" name="lastName" class="form-control" required>
+                                          </div>
+                                          <!--Email-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Email</span>
+                                            <input type="text" class="form-control" id="email" name="email" required>
+                                          </div>
+                                          <!--Food Type-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Meal Name</span>
+                                            <input type="text" class="form-control" id="foodType" name="foodType"required >
+                                          </div>
+                                          <!--Food Count-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Meals Count</span>
+                                            <input type="text" class="form-control" id="mealsCount" name="mealsCount"required >
+                                          </div>
+                                            <!--SIZE-->
+                                          <div class="input-group mb-3">
+                                                  <span class="input-group-text w-25 me-2">Size</span>
+                                                  <input type="checkbox" class="btn-check" id="btn11" autocomplete="off" name="big">
+                                                <label class="btn btn-outline-danger" for="btn11">BIG</label>
+                                                  <div class="mx-2"></div>
+                                                  <input type="checkbox" class="btn-check" id="btn22" autocomplete="off" name="medium">
+                                                <label class="btn btn-outline-danger" for="btn22">MEDIUM</label>
+                                                  <div class="mx-2"></div>
+                                                  <input type="checkbox" class="btn-check" id="btn33" autocomplete="off" name="small">
+                                                <label class="btn btn-outline-danger" for="btn33">SMALL</label>
+                                            </div>
+                                            
+                                          <!--credit card-->
+                                          <div class="input-group mb-3">
+                                              <span class="input-group-text">Name  Card</span>
+                                              <input type="text"  name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                            </div>
+                                            <div class="input-group mb-3">
+                                            <span class="input-group-text">Number  Card</span>
+                                              <input type="text" name="numberCard" class="form-control w-25"required>
+                                              <div class="my-3"></div>
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-text">Code Number On Card</span>
+                                              <input type="text" name="codeNumber"class="form-control" required>
+                                            </div>
+                                            <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit1">
+                                  </form>
+                              </div>
+                            </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mb-2 ">
+                <div class="position-relative ">
+                    <img class="siz-img" src="./images/pizzamenu3.jpg" alt="pizza">
+                    <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                    <h2>CHICKEN</h2>
+                        <h5 class="tex-light text-center">BIG 25.00$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 19.00$</h5>
+                        <h5 class="tex-light text-center">SMALL 15.00$</h5>
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#pizza3">
+                        BUY NOW
+                    </button>
+                    </div>
+                </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="pizza3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <!--But Order-->
+                                    <form action="index.php#product-pizza" method="post">
+                                       <!--First Name-->
+                                          <div class="input-group mb-3">
+                                                  <span class="input-group-text">First Name</span>
+                                                  <input type="text"name="firstName"class="form-control"  required>
+                                            </div>
+                                            <!--Last Name-->
+                                            <div class="input-group mb-3">
+                                            <span class="input-group-text">Last Name</span>
+                                            <input type="text" name="lastName" class="form-control" required>
+                                            </div>
+                                            <!--Email-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Email</span>
+                                              <input type="text" class="form-control" id="email" name="email" required>
+                                            </div>
+                                            <!--Food Type-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Meal Name</span>
+                                              <input type="text" class="form-control" id="foodType" name="foodType"required >
+                                            </div>
+                                            <!--Food Count-->
+                                            <div class="input-group mb-3">
+                                              <span class="input-group-text">Meals Count</span>
+                                              <input type="text" class="form-control" id="mealsCount" name="mealsCount"required >
+                                            </div>
+                                              <!--SIZE-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text w-25 me-2">Size</span>
+                                                    <input type="checkbox" class="btn-check" id="btn111" autocomplete="off" name="big">
+                                                  <label class="btn btn-outline-danger" for="btn111">BIG</label>
+                                                    <div class="mx-2"></div>
+                                                    <input type="checkbox" class="btn-check" id="btn222" autocomplete="off" name="medium">
+                                                  <label class="btn btn-outline-danger" for="btn222">MEDIUM</label>
+                                                    <div class="mx-2"></div>
+                                                    <input type="checkbox" class="btn-check" id="btn333" autocomplete="off" name="small">
+                                                  <label class="btn btn-outline-danger" for="btn333">SMALL</label>
+                                              </div>
+                                              
+                                            <!--credit card-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">Name  Card</span>
+                                                <input type="text"  name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                              </div>
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Number  Card</span>
+                                                <input type="text" name="numberCard" class="form-control w-25"required>
+                                                <div class="my-3"></div>
+                                              </div>
+                                              <div class="input-group">
+                                                <span class="input-group-text">Code Number On Card</span>
+                                                <input type="text" name="codeNumber"class="form-control" required>
+                                              </div>
+                                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit1">
+                                    </form>
+                                </div>
+                              </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mb-2 ">
+              <div class="position-relative ">
+                  <img class="siz-img" src="./images/pizzamenu4.jpg" alt="pizza">
+                  <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                  <h2>HAWAIIAN</h2>
+                      <h5 class="tex-light text-center">BIG 16.00$</h5>
+                      <h5 class="tex-light text-center">MEDIUM 10.00$</h5>
+                      <h5 class="tex-light text-center">SMALL 6.00$</h5>
+                      <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#pizza4">
+                      BUY NOW
+                  </button>
+                  </div>
+              </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="pizza4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="container">
+                                  <!--But Order-->
+                                  <form action="index.php#product-pizza" method="post">
+                                     <!--First Name-->
+                                        <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text"name="firstName"class="form-control"  required>
+                                          </div>
+                                          <!--Last Name-->
+                                          <div class="input-group mb-3">
+                                          <span class="input-group-text">Last Name</span>
+                                          <input type="text" name="lastName" class="form-control" required>
+                                          </div>
+                                          <!--Email-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Email</span>
+                                            <input type="text" class="form-control" id="email" name="email" required>
+                                          </div>
+                                          <!--Food Type-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Meal Name</span>
+                                            <input type="text" class="form-control" id="foodType" name="foodType"required >
+                                          </div>
+                                          <!--Food Count-->
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text">Meals Count</span>
+                                            <input type="text" class="form-control" id="mealsCount" name="mealsCount"required >
+                                          </div>
+                                            <!--SIZE-->
+                                          <div class="input-group mb-3">
+                                                  <span class="input-group-text w-25 me-2">Size</span>
+                                                  <input type="checkbox" class="btn-check" id="btn1111" autocomplete="off" name="big">
+                                                <label class="btn btn-outline-danger" for="btn1111">BIG</label>
+                                                  <div class="mx-2"></div>
+                                                  <input type="checkbox" class="btn-check" id="btn2222" autocomplete="off" name="medium">
+                                                <label class="btn btn-outline-danger" for="btn2222">MEDIUM</label>
+                                                  <div class="mx-2"></div>
+                                                  <input type="checkbox" class="btn-check" id="btn3333" autocomplete="off" name="small">
+                                                <label class="btn btn-outline-danger" for="btn3333">SMALL</label>
+                                            </div>
+                                            
+                                          <!--credit card-->
+                                          <div class="input-group mb-3">
+                                              <span class="input-group-text">Name  Card</span>
+                                              <input type="text"  name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                            </div>
+                                            <div class="input-group mb-3">
+                                            <span class="input-group-text">Number  Card</span>
+                                              <input type="text" name="numberCard" class="form-control w-25"required>
+                                              <div class="my-3"></div>
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-text">Code Number On Card</span>
+                                              <input type="text" name="codeNumber"class="form-control" required>
+                                            </div>
+                                            <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit1">
+                                  </form>
+                              </div>
+                            </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+        <!--BURGER-->
+        <div class="w-50 text-center mx-auto my-3">
+            <h1 class="text-prim ">BURGER MENU</h1>
+            <p>You're gonna need two hands to hold our toasted buns. Our fresh, juicy burgers are served up medium-well with a side of fries and a whole lot of flavor. </p>
+        </div>
+        <div class="row mb-2" id="product-burger">
+              <div class="col-lg-6 col-sm-12 mb-2 ">
+                  <div class="position-relative ">
+                      <img class="siz-img" src="./images/burgermenu1.jpg" alt="burger">
+                      <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                        <h2>DOUBLE</h2>
+                        <h5 class="tex-light text-center">BIG 8.50$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 6.50$</h5>
+                        <h5 class="tex-light text-center">SMALL 3.75$</h5>
+                          <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#burger">
+                          BUY NOW
+                      </button>
+                      </div>
+                  </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="burger" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#product-pizza" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Food Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Name</span>
+                                                <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                              </div>
+                                              <!--Food Count-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Count</span>
+                                                <input type="text" class="form-control" id="mealsCount" name="mealsCount"  >
+                                              </div>
+                                                <!--SIZE-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text w-25 me-2">Size</span>
+                                                      <input type="checkbox" class="btn-check" id="btn4" autocomplete="off" name="big">
+                                                    <label class="btn btn-outline-danger" for="btn4">BIG</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn5" autocomplete="off" name="medium">
+                                                    <label class="btn btn-outline-danger" for="btn5">MEDIUM</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn6" autocomplete="off" name="small">
+                                                    <label class="btn btn-outline-danger" for="btn6">SMALL</label>
+                                                </div>
+                                                
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Name  Card</span>
+                                                  <input type="text" name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Number  Card</span>
+                                                  <input type="text"  name="numberCard" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber" class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit2">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-2 ">
+                  <div class="position-relative ">
+                      <img class="siz-img" src="./images/burgermenu2.jpg" alt="burger">
+                      <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                        <h2>FARM</h2>
+                        <h5 class="tex-light text-center">BIG 7.50$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 5.25$</h5>
+                        <h5 class="tex-light text-center">SMALL 2.50$</h5>
+                          <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#burger2">
+                          BUY NOW
+                      </button>
+                      </div>
+                  </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="burger2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#product-pizza" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Food Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Name</span>
+                                                <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                              </div>
+                                              <!--Food Count-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Count</span>
+                                                <input type="text" class="form-control" id="mealsCount" name="mealsCount"  >
+                                              </div>
+                                                <!--SIZE-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text w-25 me-2">Size</span>
+                                                      <input type="checkbox" class="btn-check" id="btn4" autocomplete="off" name="big">
+                                                    <label class="btn btn-outline-danger" for="btn4">BIG</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn5" autocomplete="off" name="medium">
+                                                    <label class="btn btn-outline-danger" for="btn5">MEDIUM</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn6" autocomplete="off" name="small">
+                                                    <label class="btn btn-outline-danger" for="btn6">SMALL</label>
+                                                </div>
+                                                
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Name  Card</span>
+                                                  <input type="text" name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Number  Card</span>
+                                                  <input type="text"  name="numberCard" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber" class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit2">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-2 ">
+                  <div class="position-relative ">
+                      <img class="siz-img" src="./images/burgermenu1.jpg" alt="burger">
+                      <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                        <h2>BACON</h2>
+                        <h5 class="tex-light text-center">BIG 8.00$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 4.75$</h5>
+                        <h5 class="tex-light text-center">SMALL 2.50$</h5>
+                          <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#burger3">
+                          BUY NOW
+                      </button>
+                      </div>
+                  </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="burger3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#product-pizza" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Food Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Name</span>
+                                                <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                              </div>
+                                              <!--Food Count-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Count</span>
+                                                <input type="text" class="form-control" id="mealsCount" name="mealsCount"  >
+                                              </div>
+                                                <!--SIZE-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text w-25 me-2">Size</span>
+                                                      <input type="checkbox" class="btn-check" id="btn4" autocomplete="off" name="big">
+                                                    <label class="btn btn-outline-danger" for="btn4">BIG</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn5" autocomplete="off" name="medium">
+                                                    <label class="btn btn-outline-danger" for="btn5">MEDIUM</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn6" autocomplete="off" name="small">
+                                                    <label class="btn btn-outline-danger" for="btn6">SMALL</label>
+                                                </div>
+                                                
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Name  Card</span>
+                                                  <input type="text" name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Number  Card</span>
+                                                  <input type="text"  name="numberCard" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber" class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit2">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-2 ">
+                  <div class="position-relative ">
+                      <img class="siz-img" src="./images/burgermenu4.jpg" alt="burger">
+                      <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                        <h2>DOUBLE</h2>
+                        <h5 class="tex-light text-center">BIG 11.50$</h5>
+                        <h5 class="tex-light text-center">MEDIUM 7.75$</h5>
+                        <h5 class="tex-light text-center">SMALL 4.25$</h5>
+                          <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-danger mt-3 " data-bs-toggle="modal" data-bs-target="#burger4">
+                          BUY NOW
+                      </button>
+                      </div>
+                  </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="burger4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#product-pizza" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Food Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Name</span>
+                                                <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                              </div>
+                                              <!--Food Count-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Meals Count</span>
+                                                <input type="text" class="form-control" id="mealsCount" name="mealsCount"  >
+                                              </div>
+                                                <!--SIZE-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text w-25 me-2">Size</span>
+                                                      <input type="checkbox" class="btn-check" id="btn4" autocomplete="off" name="big">
+                                                    <label class="btn btn-outline-danger" for="btn4">BIG</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn5" autocomplete="off" name="medium">
+                                                    <label class="btn btn-outline-danger" for="btn5">MEDIUM</label>
+                                                      <div class="mx-2"></div>
+                                                      <input type="checkbox" class="btn-check" id="btn6" autocomplete="off" name="small">
+                                                    <label class="btn btn-outline-danger" for="btn6">SMALL</label>
+                                                </div>
+                                                
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Name  Card</span>
+                                                  <input type="text" name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Number  Card</span>
+                                                  <input type="text"  name="numberCard" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber" class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit2">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+              </div>
+        </div>    
+    </div>
+    <!--DISCOUNTS-->
+    <div class="container-fluid">
+      <h1 class="text-center my-3 text-danger">Discounts</h1>
+      <div class=" text-center mx-auto my-3">
+              <!--PIZZA-->
+            <h1 class="text-prim">PIZZA MENU</h1>
+            <p>A flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese, often garnished with anchovies, sausage slices, mushrooms, etc. </p>
+            <div class=" mx-auto text-light">
+                <p class="fs-3  bg-dark">Discounts Up To <span class="text-danger">30%</span> , Discounts Will Expire After</p>
+                <h3 id="discounts" class="text-dark"></h3>
+                </div>
+                <h2 id="discounts"></h2>
+                <div class="row mb-2" id="pizzaMenu">
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/pizzamenu1.jpg" alt="pizza">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>ORIGINAL</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">25.00$</span>17.50$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">12.00$</span>8.40$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">8.00$</span>5.60$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#pizzaDiscount">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="pizzaDiscount">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" >
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn7" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn7">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn8" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn8">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn9" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn9">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"  name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text"  name="numberCard" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit3">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                    <div class="position-relative ">
+                            <img class="siz-img" src="./images/pizzamenu2.jpg" alt="pizza">
+                            <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                              <h2>SALAMI</h2>
+                              <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">20.00$</span>14.00$</span>
+                              <br>
+                              <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">14.00$</span>9.80$</span>
+                              <br>
+                              <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">10.00$</span>7.00$</span>
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#pizzaDiscount2">
+                              BUY NOW
+                              </button>
+                            </div>
+                    </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="pizzaDiscount2">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <!--But Order-->
+                                        <form action="index.php#product-pizza" method="post">
+                                          <!--First Name-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text">First Name</span>
+                                                      <input type="text" name="firstName"  class="form-control" >
+                                                </div>
+                                                <!--Last Name-->
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Last Name</span>
+                                                <input type="text" name="lastName" class="form-control" >
+                                                </div>
+                                                <!--Email-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Email</span>
+                                                  <input type="text" class="form-control" id="email" name="email"   >
+                                                </div>
+                                                <!--Food Type-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Meals Name</span>
+                                                  <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                                </div>
+                                                <!--Food Count-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Meals Count</span>
+                                                  <input type="text" class="form-control" id="mealsCount" name="mealsCount" >
+                                                </div>
+                                                  <!--SIZE-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text w-25 me-2">Size</span>
+                                                        <input type="checkbox" class="btn-check" id="btn7" autocomplete="off" name="big">
+                                                      <label class="btn btn-outline-danger" for="btn7">BIG</label>
+                                                        <div class="mx-2"></div>
+                                                        <input type="checkbox" class="btn-check" id="btn8" autocomplete="off" name="medium">
+                                                      <label class="btn btn-outline-danger" for="btn8">MEDIUM</label>
+                                                        <div class="mx-2"></div>
+                                                        <input type="checkbox" class="btn-check" id="btn9" autocomplete="off" name="small">
+                                                      <label class="btn btn-outline-danger" for="btn9">SMALL</label>
+                                                  </div>
+                                                  
+                                                <!--credit card-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Name  Card</span>
+                                                    <input type="text"  name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Number  Card</span>
+                                                    <input type="text"  name="numberCard" class="form-control w-25">
+                                                    <div class="my-3"></div>
+                                                  </div>
+                                                  <div class="input-group">
+                                                    <span class="input-group-text">Code Number On Card</span>
+                                                    <input type="text" name="codeNumber"  class="form-control">
+                                                  </div>
+                                                  <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit3">
+                                        </form>
+                                    </div>
+                                  </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/pizzamenu3.jpg" alt="pizza">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>CHICKEN</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">25.00$</span>17.50$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">19.00$</span>13.30$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">15.00$</span>15.50$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#pizzaDiscount3">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="pizzaDiscount3">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" >
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn7" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn7">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn8" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn8">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn9" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn9">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"  name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text"  name="numberCard" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit3">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/pizzamenu1.jpg" alt="pizza">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>HAWAIIAN</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">16.00$</span>11.20$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">10.00$</span>7.00$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">6.00$</span>4.20$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#pizzaDiscount4">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="pizzaDiscount4">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType"  >
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" >
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn7" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn7">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn8" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn8">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn9" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn9">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"  name="nameCard" class="form-control w-25" name="nameCard">                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text"  name="numberCard" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit3">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+                </div>
+            <!--BURGER-->
+            <div class="w-50 text-center mx-auto my-3">
+                <h1 class="text-prim ">BURGER MENU</h1>
+                <p>You're gonna need two hands to hold our toasted buns. Our fresh, juicy burgers are served up medium-well with a side of fries and a whole lot of flavor. </p>
+            </div>
+            <div class="row mb-2"id="burgerMenu">
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/burgermenu1.jpg" alt="burger">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>DOUBLE</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">8.50$</span>5.95$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">6.50$</span>4.55$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">3.75$</span>2.625$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#burgerDiscount">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="burgerDiscount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName" class="form-control" required >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" required >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"  required>
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType" required>
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" required>
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn10" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn10">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn11" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn11">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn12" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn12">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text" name="numberCard" class="form-control w-25" required>
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber" class="form-control" required>
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit4">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                    <div class="position-relative ">
+                            <img class="siz-img" src="./images/burgermenu2.jpg" alt="burger">
+                            <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                              <h2>FARM</h2>
+                              <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">7.50$</span>5.25$</span>
+                              <br>
+                              <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">5.25$</span>3.675$</span>
+                              <br>
+                              <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">2.50$</span>1.75$</span>
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#burgerDiscount2">
+                              BUY NOW
+                              </button>
+                            </div>
+                    </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="burgerDiscount2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <!--But Order-->
+                                        <form action="index.php#product-pizza" method="post">
+                                          <!--First Name-->
+                                              <div class="input-group mb-3">
+                                                      <span class="input-group-text">First Name</span>
+                                                      <input type="text" name="firstName" class="form-control" required >
+                                                </div>
+                                                <!--Last Name-->
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Last Name</span>
+                                                <input type="text" name="lastName" class="form-control" required >
+                                                </div>
+                                                <!--Email-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Email</span>
+                                                  <input type="text" class="form-control" id="email" name="email"  required>
+                                                </div>
+                                                <!--Food Type-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Meals Name</span>
+                                                  <input type="text" class="form-control" id="foodType" name="foodType" required>
+                                                </div>
+                                                <!--Food Count-->
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">Meals Count</span>
+                                                  <input type="text" class="form-control" id="mealsCount" name="mealsCount" required>
+                                                </div>
+                                                  <!--SIZE-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text w-25 me-2">Size</span>
+                                                        <input type="checkbox" class="btn-check" id="btn10" autocomplete="off" name="big">
+                                                      <label class="btn btn-outline-danger" for="btn10">BIG</label>
+                                                        <div class="mx-2"></div>
+                                                        <input type="checkbox" class="btn-check" id="btn11" autocomplete="off" name="medium">
+                                                      <label class="btn btn-outline-danger" for="btn11">MEDIUM</label>
+                                                        <div class="mx-2"></div>
+                                                        <input type="checkbox" class="btn-check" id="btn12" autocomplete="off" name="small">
+                                                      <label class="btn btn-outline-danger" for="btn12">SMALL</label>
+                                                  </div>
+                                                  
+                                                <!--credit card-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Name  Card</span>
+                                                    <input type="text"name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Number  Card</span>
+                                                    <input type="text" name="numberCard" class="form-control w-25" required>
+                                                    <div class="my-3"></div>
+                                                  </div>
+                                                  <div class="input-group">
+                                                    <span class="input-group-text">Code Number On Card</span>
+                                                    <input type="text" name="codeNumber" class="form-control" required>
+                                                  </div>
+                                                  <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit4">
+                                        </form>
+                                    </div>
+                                  </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                  </div>   
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/burgermenu3.jpg" alt="burger">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>BACON</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">8.00$</span>5.06$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">4.75$</span>3.325$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">2.50$</span>1.75$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#burgerDiscount3">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="burgerDiscount3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName" class="form-control" required >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" required >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"  required>
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType" required>
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" required>
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn10" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn10">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn11" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn11">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn12" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn12">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text" name="numberCard" class="form-control w-25" required>
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber" class="form-control" required>
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit4">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>   
+                  <div class="col-lg-6 col-sm-12 mb-2 ">
+                      <div class="position-relative ">
+                              <img class="siz-img" src="./images/burgermenu1.jpg" alt="burger">
+                              <div class=" pizza1 container-fluid position-absolute top-0 start-0 text-light pt-4 ">
+                                <h2>KING</h2>
+                                <span class=" text-danger">BIG <span class="text-decoration-line-through text-muted pe-1 text-dange">11.50$</span>8.05$</span>
+                                <br>
+                                <span class=" text-danger">MEDIUM <span class="text-decoration-line-through text-muted pe-1 text-dange">7.75$</span>5.425$</span>
+                                <br>
+                                <span class=" text-danger">SMALL <span class="text-decoration-line-through text-muted pe-1 text-dange">4.25$</span>2.975$</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-danger mt-3 hide1" data-bs-toggle="modal" data-bs-target="#burgerDiscount4">
+                                BUY NOW
+                                </button>
+                              </div>
+                      </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="burgerDiscount4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#product-pizza" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                        <span class="input-group-text">First Name</span>
+                                                        <input type="text" name="firstName" class="form-control" required >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" required >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"  required>
+                                                  </div>
+                                                  <!--Food Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Name</span>
+                                                    <input type="text" class="form-control" id="foodType" name="foodType" required>
+                                                  </div>
+                                                  <!--Food Count-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Meals Count</span>
+                                                    <input type="text" class="form-control" id="mealsCount" name="mealsCount" required>
+                                                  </div>
+                                                    <!--SIZE-->
+                                                  <div class="input-group mb-3">
+                                                          <span class="input-group-text w-25 me-2">Size</span>
+                                                          <input type="checkbox" class="btn-check" id="btn10" autocomplete="off" name="big">
+                                                        <label class="btn btn-outline-danger" for="btn10">BIG</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn11" autocomplete="off" name="medium">
+                                                        <label class="btn btn-outline-danger" for="btn11">MEDIUM</label>
+                                                          <div class="mx-2"></div>
+                                                          <input type="checkbox" class="btn-check" id="btn12" autocomplete="off" name="small">
+                                                        <label class="btn btn-outline-danger" for="btn12">SMALL</label>
+                                                    </div>
+                                                    
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Name  Card</span>
+                                                      <input type="text"name="nameCard" class="form-control w-25" name="nameCard" required>                                                
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Number  Card</span>
+                                                      <input type="text" name="numberCard" class="form-control w-25" required>
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber" class="form-control" required>
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit4">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>                
+            </div>  
+      </div>
+    </div>
+    <!--DELIVERY-->
+    <h1 class="text-center my-3 text-danger">Fast Food Delivery</h1>
+        <!--PIZZA-->
+    <div class=" box-main position-relative " id="delivery">
+      <div class="box1 position-absolute shadow p-3 mb-5 rounded"data-aos="fade-right">     
+      </div>
+      <img class="img-pos position-absolute shadow p-3 mb-5  rounded" src="images/eating pizza.jpg" alt=""data-aos="fade-right" >
+      <div class="box2 position-absolute shadow p-3 mb-5 bg-white rounded" data-aos="fade-left">
+        <div class="text-center text-dark">
+          <h1 class="mt-2">Online Pizza Delivery</h1>
+          <p class="mt-3 fs-5">Pizza delivery drivers transport customer deliveries from the restaurant to a customer's desired location. They perform the final checks on a restaurant's product before delivering items to the customer. Pizza delivery drivers also process cash or card payments and return change when necessary</p>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deliveryPizza">
+                  Learn More
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="deliveryPizza" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="staticBackdropLabel">Pizza Delivery</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+                          <img class="img-fluid w-75" src="./images/delivery.jpg" alt="">
+                          <div class="form-group">
+                            <div class="row my-3">
+                              <div class="col-lg-4 col-md-6 col-md-12">
+                                <img class="img-fluid w-50" src="./images/food 1-1.svg" alt="">
+                                <h4>QUALITY FOOD</h4>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-md-12">
+                                <img class="img-fluid w-50" src="./images/food 2-2.svg" alt="">
+                                <h4>SUPER TASTE</h4>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-md-12">
+                                      <img class="img-fluid w-50" src="./images/food 3-3.svg" alt="">
+                                      <h4>FAST DELIVERY</h4>
+                              </div>
+                            </div>
+                            <i class="fa fa-phone fs-3"></i>
+                            <span class="fs-3">+963-90000000</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer ms-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+     <!--BURGER-->
+    <div class="box-main position-relative ">
+        <div class="box1 position-absolute shadow p-3 mb-5 rounded"data-aos="fade-right">     
+        </div>
+        <img class="img-pos position-absolute shadow p-3 mb-5  rounded" src="./images/eat burger1.jpg" alt=""data-aos="fade-right">
+        <div class="box2 position-absolute shadow p-3 mb-5 bg-white rounded"data-aos="fade-left">
+              <div class="text-center text-dark">
+                      <h1 class="mt-2">Online Burger Delivery</h1>
+                      <p class="mt-3 fs-5">Food delivery service is somewhat similar to courier service in which the ordered food is delivered from the restaurant to the customer either by the restaurant's staff or by delivery agents of a food ordering company. This obviously depends on the medium through which a customer places his/her order.</p>
+                      <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deliveryBurger">
+                              Learn More
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="deliveryBurger" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="staticBackdropLabel">Burger Delivery</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container">
+                                <img class="img-fluid w-75" src="./images/delivery.jpg" alt="">
+                                <div class="form-group">
+                                  <div class="row my-3">
+                                    <div class="col-lg-4 col-md-6 col-md-12">
+                                      <img class="img-fluid w-50" src="./images/food 1-1.svg" alt="">
+                                      <h4>QUALITY FOOD</h4>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-md-12">
+                                      <img class="img-fluid w-50" src="./images/food 2-2.svg" alt="">
+                                      <h4>SUPER TASTE</h4>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-md-12">
+                                            <img class="img-fluid w-50" src="./images/food 3-3.svg" alt="">
+                                            <h4>FAST DELIVERY</h4>
+                                    </div>
+                                  </div>
+                                  <i class="fa fa-phone fs-3"></i>
+                                  <span class="fs-3">+963-90000000</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer ms-auto">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+        </div>
+    </div>
+        <!--CONTACT-->
+    <div class="bg-dark text-light position-relative w-100 mt-2 main-contact  ">
+        <div class="container d-md-flex justify-content-between align-items-center ">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col my-auto container-fluid">
+                    <div class="box-contact ">
+                    </div>
+                    <img class="img-fluid position-absolute img-contact" src="images/contact.png" alt="">
+                </div>
+                <div class="col py-2 ">
+                <!--CONTACT-->
+                <div class="card p-3 mt-2" id="reservation">
+                    <h1 class="text-dark  text-center fs-3 mb-3 text-muted">Let Us  Know What Are You Thinking About Our Food</h1>
+                    <form class="row g-3 " action="index.php#reservation" method="post"  >
+                        <!--First Name-->
+                        <div class="input-group mb-3">
+                                  <span class="input-group-text" >First Name</span>
+                                  <input type="text" name="firstName"  class="form-control " >
+                                </div>
+                                <!--Last Name-->
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" >Last Name</span>
+                                  <input type="text" name="lastName" class="form-control" >
+                                </div>
+                                <!--Email-->
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Email</span>
+                                  <input type="text" class="form-control"  id="basic-url" name="email" >
+                                </div>
+                                <!--Phone No-->
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" >Phone Number</span>
+                                  <input type="text" name="phoneNo"  class="form-control" >
+                                </div>
+                        
+                        <div class="input-group">
+                        <span class="input-group-text h-100 text-muted ">Your Message</span>
+                        <textarea class="form-control" aria-label="With textarea" name="letters" id="letters" ></textarea>
+                        </div>
+                        <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" name="terms"required >
+                            <label class="form-check-label text-dark" for="invalidCheck text">
+                            Agree to terms and conditions
+                            </label>
+                        </div>
+                        </div>
+                        <div class="col-12 text-center">
+                        <input type="submit" name="submit5" class="btn  btn-outline-danger my-3 w-25" value="Send" >
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <!--FOOTER-->
+    <footer class="bg-dark text-light p-2 text-center mt-2">
+      <h5>All Right Are Reserved &copy;</h5>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Script.js"></script>
+    </body>
+</html>
